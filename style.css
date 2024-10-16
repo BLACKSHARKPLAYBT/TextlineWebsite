@@ -8,334 +8,385 @@ body {
 	background-color: #101014;
 }
 
+@media screen and (min-width: 1200px) {
+	/*内容*/
+	.content {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-family: "LXGW WenKai", serif;
+	}
 
-/*顶栏*/
-.bar {
-    height: 76px;
-    width: 100%;
-	background-color: #121216;
-    top: 0;
-    position: sticky;
-	z-index: 2;
-}
-
-.logo {
-	background-image: url("https://s21.ax1x.com/2024/09/20/pAMphfe.png");  /* res/logo.png */
-	background-size: cover;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	left: 15px;
-	top: 15px;
-	cursor: pointer;
-}
-
-label[for="toggle"] {
-	position: absolute;
-    width: 25px;
-	height: 25px;
-	cursor: pointer;
-	color: white;
-	background-size: cover;
-	background-position: center;
-	user-select: none;
-	right: 25px;
-	top: 25px;
-	z-index: 3;
-}
-
-label .close {
-	opacity: 0;
-}
-
-label svg {
-	position: absolute;
-	left: auto;
-	top: auto;
-}
-
-input[type="checkbox"] {
-	position: absolute;
-	top: 0;
-	z-index: 3;
-	display: none;
-}
-
-input[type="checkbox"]:checked ~ aside {
-	right: 0;
-}
-
-input[type="checkbox"]:checked  + label .close {
-	opacity: 1;
-}
-
-input[type="checkbox"]:checked  + label .menu {
-	opacity: 0;
-}
-
-.info {
-	position: fixed;
-	width: 300px;
-	height: 100%;
-	background-color: black;
-	right: -300px;
-	top: 0;
-	transition: 0.5s;
-	z-index: 1;
-}
-
-.info > a {
-	font-size: 20px;
-	color: white;
-	width: calc(80% - 10px);
-	height: 60px;
-	display: block;
-	border: 1px solid black;
-	margin-left: calc(10% - 10px);
-	border-radius: 15px;
-	text-decoration: none;
-	transition: 0.5s;
-	line-height: 55px;
-	padding-left: 10px;
-	margin-top: 10px;
-	font-family: "Smiley Sans Oblique", serif;
-}
+	/*顶栏*/
+	.bar {
+		height: 76px;
+		width: 100%;
+		background-color: #121216;
+		top: 0;
+		position: sticky;
+		z-index: 2;
+	}
 
 
-.info :first-child {
-	margin-top: 65px;
-}
+	.bar p {
+		font-size: 38px;
+		margin-left: 100px;
+		top: 22px;
+		color: white;
+		transition: 0.5s;
+		font-family: "Smiley Sans Oblique", serif;
+		display: inline;
+		position: relative;
+	}
 
-.info > a:hover {
-	background-color: #47474a;
-}
+	.logo {
+		background-image: url("https://s21.ax1x.com/2024/09/20/pAMphfe.png"); /* res/logo.png */
+		background-size: cover;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		cursor: pointer;
+	}
 
+	label[for="toggle"] {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+		color: white;
+		background-size: cover;
+		background-position: center;
+		user-select: none;
+		right: 25px;
+		top: 25px;
+		z-index: 3;
+	}
 
-.info-A {
-	width: 80%;
-	height: 200px;
-	background-color: black;
-	margin-right: auto;
-	margin-left: auto;
-}
+	label .menu {
+		width: 50px;
+		height: 50px;
+	}
+	label .close {
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+	}
 
-.info-A a {
-	font-family: "Smiley Sans Oblique", serif;
-}
+	label svg {
+		position: absolute;
+		right: 25px;
+		top: -10px;
+	}
 
-.info-A p {
-	font-size: 38px;
-	margin-left: 15px;
-	margin-top: 5px;
-	color: white;
-	transition: 0.5s;
-	font-family: "Smiley Sans Oblique", serif;
-}
+	input[type="checkbox"] {
+		position: absolute;
+		top: 0;
+		z-index: 3;
+		display: none;
+	}
 
-.info-button {
-	width: 250px;
-	height: 50px;
-	font-size: 25px;
-	margin-left: 10px;
-	border: 1px solid blue;
-	text-align: center;
-	padding: 0;
-	margin-top: 10px;
-	background-color: #22a8e6;
-	color: black;
-	border-radius: 15px;
-	text-decoration: none;
-	display: inline-block;
-	line-height: 50px;
-}
+	input[type="checkbox"]:checked ~ aside {
+		right: 0;
+	}
 
-.info-button:hover {
-	background-color: #51c9ff;
-}
+	input[type="checkbox"]:checked + label .close {
+		opacity: 1;
+	}
 
-/*个人界面*/
-.below p {
-	color: white;
-	font-size: 40px;
-	text-align: left;
-	line-height: 1.8;
-	text-indent: 20px;
-	margin-top: 0;
-	font-family: "LXGW WenKai",serif;
-}
-
-.bottom {
-	width: 300px;
-	height: 50px;
-	border-radius: 25px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: auto auto 200px auto;
-
-}
-.content {
-	width: 450px;
-	height: 800px;
-	margin-top: 8px;
-	margin-left: 10px;
-	padding-top: 10px;
-	display: inline-block;
-	border: 1px;
-	border-radius: 25px;
-}
-
-
-
-.avatar {
-	width: 168px;
-	height: 168px;
-	background-image: url("https://s21.ax1x.com/2024/09/20/pAMpcex.webp");  /* res/avatar.webp  */
-	background-size: cover;
-    margin: 10px auto;
-	padding-top: 10px;
-	border: 2px solid #000000;
-	border-radius: 100px 100px 100px 100px;
-}
-
-.name {
-	font-size: 65px;
-	text-align: center;
-	color: white;
-	margin-top: 2px;
-	font-family: "Smiley Sans Oblique", serif;
-}
-
-.below {
-	width: 400px;
-	height: 500px;
-	margin: 20px auto;
-	border-radius: 25px;
-	display: grid;
-}
+	input[type="checkbox"]:checked + label .menu {
+		opacity: 0;
+	}
 
 
 
 
-/*界面*/
-.main {
-	width: 900px;
-	height: 810px;
-	margin-top: 8px;
-	margin-right: 5px;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 10px;
-	border: 1px;
-	border-radius: 25px;
-	overflow-y: scroll;
-	align-items: center;
-	justify-content: center;
-	scrollbar-width: none;
-}
+	/*       侧边栏     */
+	.info {
+		position: fixed;
+		width: 400px;
+		height: 100%;
+		background-color: black;
+		right: -400px;
+		top: 0;
+		transition: 0.5s;
+		z-index: 1;
+		border-radius: 35px;
+	}
 
-.main > div {
-	width: 800px;
-    height: 300px;
-	border-radius: 50px;
-	margin: 5px;
-	background-size: cover;
-	padding: 2px;
-}
-
-.main > div a {
-	font-size: 65px;
-	margin-left: 20px;
-	margin-top: 200px;
-	font-family: "Smiley Sans Oblique", serif;
-	display: inline-block;
-	text-decoration: none;
-}
-
-.main > div a:hover {
-	cursor: pointer;
-}
-
-.main-1 a {
-	color: #0068fd;
-}
-/* 底部*/
-.all {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	row-gap: 20px;
-}
-
-.get {
-	width: 98%;
-	height: 100%;
-	background-color: #101014;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
+	.info > a {
+		font-size: 20px;
+		color: white;
+		width: calc(80% - 10px);
+		height: 60px;
+		display: block;
+		border: 1px solid black;
+		margin-left: calc(10% - 10px);
+		border-radius: 15px;
+		text-decoration: none;
+		transition: 0.5s;
+		line-height: 55px;
+		padding-left: 10px;
+		margin-top: 10px;
+		font-family: "Smiley Sans Oblique", serif;
+	}
 
 
-.test {
-	background-color: whitesmoke;
-	width: 300px;
-	height: 350px;
-	margin-top: 150px;
-	margin-left: 50px;
-	display: grid;
-	border-radius: 15px;
-}
+	.info :first-child {
+		margin-top: 35%;
+	}
 
-.test a {
-	font-size: 30px;
-	text-align: left;
-	color: black;
-	margin-top: 35px;
-	width: 100%;
-	height: 130px;
-	font-family: "Sarasa Gothic J",serif;
-	font-weight: 1;
-	text-indent: 20px;
-	text-overflow: ellipsis ellipsis;
-	overflow: hidden;
-	text-space: nowrap;
-}
-
-.get div div {
-	width: 300px;
-	height: 220px;
-	position: relative;
-	left: 0;
-	top: 0;
-	border-radius: 15px 15px 0 0;
-}
-
-.get div a {
-	text-decoration: none;
-}
-
-.get div a:hover {
-	text-decoration: underline blue;
-	cursor: pointer;
-
-}
+	.info > a:hover {
+		background-color: #47474a;
+	}
 
 
-/* footer */
-footer {
-	width: 100%;
-	height: 300px;
-}
+	.info-A {
+		width: 80%;
+		height: 200px;
+		background-color: black;
+		margin-right: auto;
+		margin-left: auto;
+	}
 
-footer p {
-	font-size: 40px;
-	text-align: center;
-	color: white;
-	margin-top: 100px;
-	font-family: "Smiley Sans Oblique", serif;
+	.info-A a {
+		font-family: "Smiley Sans Oblique", serif;
+	}
+
+
+	.info-button {
+		width: 250px;
+		height: 50px;
+		font-size: 25px;
+		margin-left: 10px;
+		border: 1px solid blue;
+		text-align: center;
+		padding: 0;
+		margin-top: 10px;
+		background-color: #22a8e6;
+		color: black;
+		border-radius: 15px;
+		text-decoration: none;
+		display: inline-block;
+		line-height: 50px;
+	}
+
+	.info-button:hover {
+		background-color: #51c9ff;
+	}
+
+	/*      个人界面       */
+	.below p {
+		color: white;
+		font-size: 40px;
+		text-align: left;
+		line-height: 1.8;
+		text-indent: 20px;
+		margin-top: 0;
+		font-family: "LXGW WenKai", serif;
+	}
+
+	.bottom {
+		width: 300px;
+		height: 50px;
+		border-radius: 25px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin: auto auto 200px auto;
+
+	}
+
+	.content {
+		width: 450px;
+		height: 800px;
+		margin-top: 8px;
+		padding-top: 10px;
+		display: inline-block;
+		border: 1px;
+		border-radius: 25px;
+	}
+
+
+	.avatar {
+		width: 168px;
+		height: 168px;
+		background-image: url("https://s21.ax1x.com/2024/09/20/pAMpcex.webp"); /* res/avatar.webp  */
+		background-size: cover;
+		margin: 10px auto;
+		padding-top: 10px;
+		border: 2px solid #000000;
+		border-radius: 100px 100px 100px 100px;
+	}
+
+	.name {
+		font-size: 65px;
+		text-align: center;
+		color: white;
+		margin-top: 2px;
+		font-family: "Smiley Sans Oblique", serif;
+	}
+
+	.below {
+		width: 400px;
+		height: 500px;
+		margin: 20px auto;
+		border-radius: 25px;
+		display: grid;
+	}
+
+
+	/*界面*/
+	.main {
+		width: 900px;
+		height: 810px;
+		margin-top: 8px;
+		margin-right: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		border: 1px;
+		border-radius: 25px;
+		overflow-y: scroll;
+		align-items: center;
+		justify-content: center;
+		scrollbar-width: none;
+	}
+
+	.main > div {
+		width: 800px;
+		height: 300px;
+		border-radius: 50px;
+		margin: 5px;
+		background-size: cover;
+		padding: 2px;
+	}
+
+	.main > div a {
+		font-size: 65px;
+		margin-left: 20px;
+		margin-top: 200px;
+		font-family: "Smiley Sans Oblique", serif;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	.main > div a:hover {
+		cursor: pointer;
+	}
+
+	.main-1 a {
+		color: #0068fd;
+	}
+
+	/*    底部     */
+	.all {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		row-gap: 20px;
+	}
+
+	.get {
+		width: 98%;
+		height: 100%;
+		background-color: #101014;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+	.test {
+		width: 300px;
+		height: 350px;
+		margin-top: 130px;
+		margin-left: 25px;
+		margin-right: 25px;
+		display: grid;
+		border-radius: 25px;
+		background-color: #202024;
+	}
+
+	.test a {
+		font-size: 24px;
+		text-align: left;
+		color: white;
+		margin-top: 20px;
+		width: 100%;
+		height: 48px;
+		font-family: "Sarasa Gothic J", serif;
+		font-weight: 1;
+		text-indent: 8px;
+		text-overflow: ellipsis ellipsis;
+		overflow: hidden;
+		text-space: nowrap;
+	}
+
+	.get div div {
+		width: 300px;
+		height: 220px;
+		position: relative;
+		left: 0;
+		top: 0;
+		border-radius: 10px;
+	}
+
+	.get div div:hover {
+
+	}
+
+	.get div a {
+		text-decoration: none;
+	}
+
+	.get div a:hover {
+		text-decoration: underline blue;
+		cursor: pointer;
+
+	}
+
+	.get div .tag {
+		display: flex;
+		width: auto;
+		height: 30px;
+		flex-wrap: wrap;
+		overflow: hidden;
+	}
+
+	.get div .tag p {
+		color: white;
+		border: solid darkgray;
+		border-radius: 10px;
+		display: inline-block;
+		background-color: #101014;
+		margin-left: 10px;
+		margin-top: 0;
+	}
+
+
+	/*    底部     */
+	footer {
+		width: 100%;
+		height: 300px;
+	}
+
+	footer p {
+		font-size: 40px;
+		text-align: center;
+		color: white;
+		margin-top: 100px;
+		font-family: "Smiley Sans Oblique", serif;
+	}
+
 }

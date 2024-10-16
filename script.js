@@ -50,3 +50,4 @@ for (let i = 1; i < dddNumber; i++) {
     console.log(imgN);
     document.querySelector(`.${imgN3}`).style.backgroundImage=`url(${imgN2})`;
 }
+
