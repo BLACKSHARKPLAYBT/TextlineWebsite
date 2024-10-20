@@ -2,12 +2,10 @@
 /* 存储区  */
 let  functionSave = {
     function1: "https://s21.ax1x.com/2024/09/21/pAM3bFO.png",  /* res/web.png   */
-    function2: "https://s21.ax1x.com/2024/09/20/pAMpIld.png",
-    function3: "https://s21.ax1x.com/2024/09/20/pAMpIld.png",
-    function4: "https://s21.ax1x.com/2024/09/20/pAMpIld.png",
-    function5: "https://s21.ax1x.com/2024/09/20/pAMpIld.png",
-    function6: "https://s21.ax1x.com/2024/09/20/pAMpIld.png",
-    function7: "https://s21.ax1x.com/2024/09/20/pAMpIld.png"
+    function2: "https://s21.ax1x.com/2024/10/20/pAa3JnP.png",    /*  res/python.png*/
+    function3: "https://s21.ax1x.com/2024/10/20/pAa3MfH.png",     /* res/null.png  */
+    function4: "https://s21.ax1x.com/2024/10/20/pAa3MfH.png",
+    function5: "https://s21.ax1x.com/2024/10/20/pAa3MfH.png"
 }
 
 let imgSave = {
@@ -50,3 +48,4 @@ for (let i = 1; i < dddNumber; i++) {
     console.log(imgN);
     document.querySelector(`.${imgN3}`).style.backgroundImage=`url(${imgN2})`;
 }
+
