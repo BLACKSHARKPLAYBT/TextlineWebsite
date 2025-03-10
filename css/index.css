@@ -7125,7 +7125,7 @@ body[data-type="link"] #page .page-title {
   -webkit-align-items: center;
   align-items: center;
   overflow: hidden;
-  height: 18em;
+  height: 16em;
   position: relative;
   border-radius: 12px;
   -webkit-box-shadow: none;
@@ -7574,7 +7574,7 @@ div#bannerGroup {
     display: box;
     display: flex;
     height: auto;
-    width: 49%;
+    width: 31%;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     -webkit-box-orient: vertical;
