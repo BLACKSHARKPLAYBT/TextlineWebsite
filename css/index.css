@@ -2670,7 +2670,7 @@ i.anzhiyu-icon-hashtag {
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #ff7242;
+  --btn-hover-color: #000;
   --btn-color: #fff;
   --btn-bg: var(--anzhiyu-main);
   --text-bg-hover: rgba(0,0,0,0.7);
@@ -2684,7 +2684,7 @@ i.anzhiyu-icon-hashtag {
   --toc-link-color: #666261;
   --card-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.05);
   --card-hover-box-shadow: 0 3px 8px 6px rgba(7,17,27,0.09);
-  --pseudo-hover: #ff7242;
+  --pseudo-hover: #000;
   --headline-presudo: var(--anzhiyu-fontcolor);
   --scrollbar-color: var(--anzhiyu-scrollbar);
   --anzhiyu-snackbar-time: 2000ms;
@@ -2782,7 +2782,7 @@ i.anzhiyu-icon-hashtag {
   --anzhiyu-blue-tint: rgba(92,161,255,0.1);
   --anzhiyu-theme-op-deep: rgba(0,132,255,0.867);
   --global-bg: #18171d;
-  --anzhiyu-theme: #7b1fa2;
+  --anzhiyu-theme: #000814;
   --anzhiyu-theme-deep: #0076e5;
   --anzhiyu-theme-op: rgba(242,185,75,0.137);
   --anzhiyu-blue: #0084ff;
@@ -9240,7 +9240,6 @@ h1.page-title + .tag-cloud-list {
 #aside-content .card-widget .author-info__bottom-group .author-info__name {
   text-align: left;
   font-weight: 700;
-  color: var(--anzhiyu-white);
   font-size: 20px;
   line-height: 1;
   margin-bottom: 5px;
@@ -9248,7 +9247,6 @@ h1.page-title + .tag-cloud-list {
 }
 #aside-content .card-widget .author-info__bottom-group .author-info__desc {
   font-size: 12px;
-  color: var(--anzhiyu-white);
   opacity: 0.6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
   filter: alpha(opacity=60);
@@ -9268,7 +9266,6 @@ h1.page-title + .tag-cloud-list {
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
-  color: var(--anzhiyu-white);
 }
 #aside-content .card-widget .banner-button-group .banner-button {
   padding: 20px 12px;
@@ -16339,7 +16336,7 @@ li.card-category-list-item {
 #waline-wrap {
   --waline-font-size: 1.1em;
   --waline-theme-color: var(--anzhiyu-main);
-  --waline-active-color: #ff7242;
+  --waline-active-color: #000;
 }
 #waline-wrap .vuser {
   -webkit-transition: all 0.5s;
@@ -16354,6 +16351,43 @@ li.card-category-list-item {
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+#waline-wrap .wl-comment {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+#waline-wrap .wl-panel {
+  width: 80%;
+}
+.wl-empty {
+  padding: 4.25em;
+}
+.wl-action[href="https://guides.github.com/features/mastering-markdown/"] {
+  display: none;
+}
+.wl-header.item3 {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 #vcomment textarea {
   background: url("/img/comment_bg.png") 100% 100% no-repeat;
@@ -23309,18 +23343,17 @@ a.categoryButton:after {
 }
 
 [data-theme="dark"] a.categoryButton.blue {
-  background: linear-gradient(to right, #0653b8, #2fcbff);
+  background: linear-gradient(to right, #03045e, #023e8a);
   background-size: 200%;
 }
 [data-theme="dark"] a.categoryButton.red {
-  background: linear-gradient(to right, #e22a16, #da980c);
+  background: linear-gradient(to right, #0077b6, #0096c7);
   background-size: 200%;
 }
 [data-theme="dark"] a.categoryButton.green {
-  background: linear-gradient(to right, #099e74, #0ea4a4);
+  background: linear-gradient(to right, #00b4d8, #48cae4);
   background-size: 200%;
 }
-
 #topPostGroup .top-group-list-item {
   display: flex;
   width: calc(100% / 4 - 5px);
