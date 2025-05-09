@@ -27467,6 +27467,24 @@ div#runtime {
   transform: translateY(-100%);
 }
 
+/* Waline 暗黑模式自定义样式 */
+[data-theme='dark'] #waline-wrap {
+  --waline-white: #fff;
+  --waline-light-grey: #666;
+  --waline-dark-grey: #999;
+  --waline-text-color: rgba(255, 255, 255, 0.7);
+  --waline-bgcolor: #1d1e22;
+  --waline-bgcolor-light: #272727;
+  --waline-bgcolor-hover: #444;
+  --waline-border-color: #333;
+  --waline-disable-bgcolor: #444;
+  --waline-disable-color: #999;
+  --waline-bq-color: #272727;
+  --waline-info-bgcolor: #272727;
+  --waline-info-color: #666;
+  --waline-theme-color: #fff;
+}
+
 .search-dialog {
   position: fixed;
   top: 5rem;
